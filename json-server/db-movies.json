@@ -221,6 +221,12 @@
       "email": "tester123@gmail.com",
       "password": "123",
       "id": 37
+    },
+    {
+      "username": "hello123",
+      "email": "hello321@gmail.com",
+      "password": "123",
+      "id": 38
     }
   ],
   "movies": [
