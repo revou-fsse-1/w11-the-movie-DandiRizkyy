@@ -43,4 +43,5 @@ Postman Documentation Links : [Click Here 🐱]()
 ---
 
 Week 11 Assignment Links (Netlify) : [Click Me 🙀](https://dandi-week11.netlify.app/)
-Week 11 Assignment Links (Subdomain) : [Click Me 🙀](https://the-movie-app.dandirizky.site/)
+
+Week 11 Assignment Links (Custom Domain) : [Click Me 🙀](https://the-movie-app.dandirizky.site/)
