@@ -50,13 +50,30 @@ async function displayMovieDetails() {
   const id = urlSource.get("id");
   const resultElement = document.getElementById("movie-details");
   const data = await fetchMovieDetails(id);
+  const genre = data.genre
+    .map(
+      (genre) =>
+        `<span class="genre rounded-3xl border px-3 border-black p-1">${genre}</span>`
+    ) // looping genre satu satu
+    .join(" ");
   resultElement.innerHTML = `
-  <div class="flex flex-col">
+  <div class="w-auto h-6">
   <h2 class="font-bold text-4xl">${data.title}</h2>
-  <img src="${data.image}" class="object-fill h-52 w-36 rounded-2xl mt-5"/>
-  <p>${data.synopsis}</p>
-  <iframe width="853" height="480" src="${data.trailer}"></iframe>
+  </div>
+  
+  <div class="flex flex-1 lg:mt-10">
+  <img src="${data.image}" class="object-fill h-72 w-52 rounded-2xl mt-1"/>
+  <div class="flex flex-col">
   <div>
+  <p class="lg:ml-1 lg:justify-evenly flex mx-1 h-min w-auto lg:mt-7 font-bold ">${genre}</p>
+  </div>
+  <p class=" relative text-sm lg:mt-5 lg:ml-3 font-bold w-80">${data.synopsis}</p>
+  <p class="lg:ml-3 mt-20">IMBD Rating ⭐${data.rating}/10</p>
+  </div>  
+  <iframe width="590" height="320" class="rounded-2xl lg:ml-20" src="${data.trailer}"></iframe>
+  </div>
+  
+  
   `;
 }
 displayMovieDetails();
