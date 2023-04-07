@@ -227,6 +227,18 @@
       "email": "hello321@gmail.com",
       "password": "123",
       "id": 38
+    },
+    {
+      "username": "hello1234",
+      "email": "hello3210@gmail.com",
+      "password": "1234",
+      "id": 39
+    },
+    {
+      "username": "dor123",
+      "email": "dor123@gmail.com",
+      "password": "1234",
+      "id": 40
     }
   ],
   "movies": [
