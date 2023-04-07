@@ -20,7 +20,7 @@
 
 ---
 
-Postman Documentation Links : [Click Here 🐱]()
+Postman Documentation Links : [Click Here 🐱](https://documenter.getpostman.com/view/24409630/2s93RZNq3z)
 
 ## Technologies 🚀
 
