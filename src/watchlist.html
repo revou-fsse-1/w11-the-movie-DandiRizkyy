@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Week 11 Movie Watchlist</title>
+  </head>
+  <body>
+    <main id="main-content" class="flex-1 bg-cover h-screen">
+      <div class="mx-auto my-2 max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="-mt-5 flex justify-between">
+          <h2 class="font-bold text-3xl -mt-6">
+            <a href="moviepage.html">The</a>
+          </h2>
+
+          <input
+            type="text"
+            id="search"
+            placeholder="🔍 Search a movie or a series"
+            class="w-1/2 rounded-3xl ml-24 invisible sm:invisible md:visible bg-[#D9D9D9] placeholder-black text-center"
+          />
+          <button
+            id="watchlist"
+            class="border flex text-black font-bold bg-[#D9D9D9] p-2 px-4 rounded-xl"
+          >
+            <svg
+              width="19"
+              height="24"
+              viewBox="0 0 19 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.15665 22.355L1.15358 22.3533C1.1073 22.3272 1.06875 22.2894 1.0419 22.2436C1.01514 22.1979 1.00095 22.146 1.00075 22.0931V3.02821V3.01694L1.0005 3.00568C0.988859 2.48931 1.18117 1.98916 1.53577 1.61361C1.88678 1.24186 2.36881 1.02186 2.87922 1H15.3176C15.828 1.02186 16.31 1.24186 16.661 1.61361C17.0156 1.98916 17.2079 2.48931 17.1963 3.00568L17.196 3.01695V3.02821V22.0903C17.1954 22.1419 17.1814 22.1924 17.1555 22.237C17.1292 22.2823 17.0915 22.3198 17.0462 22.3459L17.0462 22.346C17.0006 22.3723 16.949 22.3861 16.8964 22.3861C16.8438 22.3861 16.7921 22.3723 16.7465 22.346L16.7466 22.3459L16.7392 22.3418L9.37012 18.1698L8.86267 17.8826L8.36272 18.1827L1.43552 22.3416L1.42916 22.3454L1.42286 22.3494C1.3821 22.3747 1.33593 22.3898 1.28825 22.3935C1.24206 22.391 1.197 22.3779 1.15665 22.355Z"
+                stroke="black"
+                stroke-width="2"
+              />
+            </svg>
+            <a href="watchlist.html" class="mx-1">Watchlist</a>
+          </button>
+        </div>
+        <div class="-mt-8">
+          <h2 class="font-bold text-3xl"><a href="moviepage.html">Movie</a></h2>
+          <h2 class="font-bold text-3xl">
+            <a href="moviepage.html">Watchlist</a>
+          </h2>
+        </div>
+        <input
+          type="text"
+          id="search"
+          placeholder="🔍 Search a movie or a series"
+          class="w-80 mt-5 rounded-3xl flex mx-auto p-4 sm:visible md:invisible lg:invisible xl:invisible bg-[#D9D9D9] placeholder-black text-center"
+        />
+        <div
+          id="grid-content-watchlist"
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-6"
+        ></div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -10,13 +10,13 @@
     <main class="flex flex-col h-screen">
       <div>
         <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-          <div class="mx-auto max-w-lg -mt-16 md:-mt-11">
-            <form action="" class="mt-6 mb-0 space-y-4 p-4 sm:p-6 lg:p-8">
+          <div class="mx-auto max-w-lg -mt-16 md:-mt-24">
+            <form class="mt-6 mb-0 space-y-4 p-4 sm:p-6 lg:p-8">
               <h2 class="font-bold text-6xl">The</h2>
               <h2 class="font-bold text-6xl">Movie</h2>
               <h2 class="font-bold text-6xl">Watchlist</h2>
               <div>
-                <label for="email" class="sr-only">Email</label>
+                <label for="username" class="sr-only">Email</label>
 
                 <div class="relative">
                   <input
@@ -24,6 +24,18 @@
                     id="username"
                     class="w-full rounded-3xl border border-black p-4 pr-12 text-sm text-center sm:text-left"
                     placeholder="Username"
+                  />
+                </div>
+              </div>
+              <div>
+                <label for="email" class="sr-only">Email</label>
+
+                <div class="relative">
+                  <input
+                    type="email"
+                    id="email"
+                    class="w-full rounded-3xl border border-black p-4 pr-12 text-sm text-center sm:text-left"
+                    placeholder="Email Address"
                   />
                 </div>
               </div>
@@ -40,20 +52,33 @@
                   />
                 </div>
               </div>
+
+              <div>
+                <label for="confirm-password" class="sr-only">Password</label>
+
+                <div class="relative">
+                  <input
+                    type="password"
+                    id="confirm-password"
+                    class="w-full rounded-3xl border border-black p-4 pr-12 text-sm text-center sm:text-left"
+                    placeholder="Confirm Password"
+                  />
+                </div>
+              </div>
             </form>
             <div class="md:-mt-10 lg:-mt-10 space-y-4 p-4 sm:p-6 lg:p-8">
               <button
                 type="submit"
-                id="button-login"
-                onclick="loginUser()"
+                onclick="registerUser()"
+                id="button-register"
                 class="block w-full rounded-3xl bg-[#3fc0e7] hover:bg-[#249cc0] px-5 py-3 text-xl font-medium text-white"
               >
-                Login
+                Register
               </button>
 
               <p class="mx-2 text-sm text-gray-500">
-                You dont have an account?
-                <a class="font-bold" href="./register.html">SignUp</a>
+                Already have an account?
+                <a class="font-bold" href="./index.html">Login</a>
               </p>
             </div>
           </div>
