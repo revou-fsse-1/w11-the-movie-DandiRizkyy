@@ -4,7 +4,7 @@
 
 ---
 
-> Under Construction Sir. 🚧
+For this week assignment, we have a task to slice/duplicate the movie website from this figma [Links](<https://www.figma.com/file/yCKKRAWIdhVVekSMjwJCGp/The-Movie-Tracker---TV-Shows-%26-Movies-Tracking-Web-App-(Community)?node-id=9-100&t=ijCcQkNNnhagBOiJ-0>) using HTML, Tailwindcss, Javascript and REST API.
 
 ## Pages 📖
 
